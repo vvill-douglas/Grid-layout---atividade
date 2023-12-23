@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - I</title>
+    <style>
+        .quadrado-maior {
+            margin: 10; padding: 0px 100px 0 100px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .quadrado-meio {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .quadrado-aside {
+            display: flex; align-items: center;
+            flex-flow: row wrap;
+            margin-left: 15px; margin-right: auto; margin-top: 20px;
+        }
+        .div-format{
+            background-color: rgb(240, 240, 188); padding: 1px; width: 60px; height: 60px; margin-top: 10px; margin-right: 10px; margin-left: 10px; margin-bottom: 10px;
+        }
+
+        header{
+            background-color: lightgreen;
+            height: 80px; width: 480px;
+        }
+        article {
+            background-color: lightblue;
+            height: 220px; width: 288px;
+        }
+        aside {
+            background-color: rgb(97, 204, 97);
+            height: 220px; width: 192px;
+        }
+        footer {
+            background-color: darkgreen;
+            height: 80px; width: 480px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout com Flexbox - I</h1>
+    <div class="quadrado-maior">
+        <header>&lt;header&gt;</header>
+        <div class="quadrado-meio">
+            <article>&lt;article&gt;</article>
+            <aside>&lt;aside&gt;
+                <div class="quadrado-aside">
+                    <div class="div-format">&lt;div&gt;</div>
+                    <div class="div-format">&lt;div&gt;</div>
+                    <div class="div-format">&lt;div&gt;</div>
+                    <div class="div-format">&lt;div&gt;</div>
+                </div>
+            </aside>
+        </div>
+        <footer>&lt;footer&gt;</footer>
+    </div>
+</body>
+</html>

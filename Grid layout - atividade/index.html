@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox - I</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        header{
+            display: flex; height:80px; width: 480px;
+            background-color: lightgreen;
+        }
+        article{
+            display: flex; height: 240px; width: 288px;
+            flex-flow: row wrap;
+            background-color: lightblue;
+            text-align: center;
+        }
+        aside{
+            display: flex; 
+            height: 240px; width: 192px;
+            flex-flow:  wrap;
+            background-color: green;
+        }
+        footer{
+            display: flex; height: 80px; width: 480px;
+            background-color: darkgreen;
+        }
+        .flex-container{
+            padding: 0px 100px 0px 100px;
+            text-align: center;
+        }
+        .flex-container2{
+            display: flex;
+            text-align: center;
+            flex-flow: row wrap;
+        }
+        .div-aside {
+            display: flex;
+            background-color: yellow;
+            margin: 5px;
+            height: 70px; width: 70px;
+            flex-flow: wrap;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Layout com Flexbox - I</h1>
+    <div class="flex-container">
+        <header>&lt;header&gt;</header>
+        <div class="flex-container2">
+            <article>&lt;article&gt;</article>
+            <aside>
+                &lt;aside&gt;
+                <div class="div-aside">&lt;div&gt;</div>
+                <div class="div-aside">&lt;div&gt;</div>
+                <div class="div-aside">&lt;div&gt;</div>
+                <div class="div-aside">&lt;div&gt;</div>
+            </aside>
+        </div>
+        <footer>&lt;footer&gt;</footer>
+    </div>
+</body>
+</html>

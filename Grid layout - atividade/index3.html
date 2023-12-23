@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox - II</title>
+    <style>
+        .quadrado-maior{
+            display: flex;
+            text-align: center;
+            font-weight: bold;
+            margin: 30px;
+            height: 500px; width: 600px;
+        }
+        .div-meio{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .article-aside-footer{
+            display: flex;
+            flex-flow: row-reverse wrap;
+        }
+        .aside-footer{
+            display: flex;
+            flex-flow: column wrap;
+        }
+        nav{
+            background-color: rgb(184, 248, 184);
+            height: 500px; width: 300px;
+        }
+        header {
+            background-color: lightgreen;
+            height: 100px; width: 500px;
+        }
+        article {
+            background-color: lightblue;
+            height: 300px; width: 400px;
+        }
+        aside {
+            background-color: rgb(64, 163, 64);
+            height: 400px; width: 100px;
+        }
+        footer {
+            background-color: darkgreen;
+            height: 100px; width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout com Flexbox - II</h1>
+    <div class="quadrado-maior">
+        <nav>&lt;nav&gt;</nav>
+        <div class="div-meio">
+            <header>&lt;header;&gt;</header>
+            <div class="article-aside-footer">
+                <aside>&lt;aside&gt;</aside>
+                <div class="aside-footer">
+                    <article>&lt;article&gt;</article>
+                    <footer>&lt;footer&gt;</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
